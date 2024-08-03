@@ -29,7 +29,7 @@ st.write(
 st.divider()
 
 
-query = st.text_input("Anime description:", placeholder="E.g. Time travel murder mystery")
+query = st.text_input("Anime Description:", placeholder="E.g. Time travel murder mystery")
 top_n = st.slider("Top n-th anime:", 100, anime_filtered.shape[0], 5000, 100)
 searched = st.button("Search")
 
