@@ -21,6 +21,8 @@ st.write(
     It leverages the use of **Vector Embeddings** to turn query and textual information provided by \
     [MyAnimeList](https://myanimelist.net/topanime.php) into vector of numbers. \
     The vector query will be matched to several anime based on the similarity of the encoding. \
+    \n\n The purpose of this project is to teach myself about embeddings and encoders. \
+    The same concept can be applied to Movies, TV Series, Books and etc. \
     For more information please visit my [github repo](https://www.youtube.com/watch?v=BbeeuzU5Qc8)"
 )
 
