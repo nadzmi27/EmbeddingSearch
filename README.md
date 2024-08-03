@@ -2,7 +2,8 @@
 Searching for recommendations using vector embedding. I am currently trying to make it work for the Anime Dataset from MAL
 
 TODO:
-- [ ] Deploy online
+- [x] Deploy online
+- [ ] Deploy on platform that allow CUDA integration
 - [ ] DOCUMENTATION!!! DON'T BE LAZY
 - [ ] Add your own data scraping
 - [ ] Format displayed df 
