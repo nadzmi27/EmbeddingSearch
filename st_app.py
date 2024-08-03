@@ -33,7 +33,7 @@ query = st.text_input("Anime description:", placeholder="E.g. Time travel murder
 top_n = st.slider("Top n-th anime:", 100, anime_filtered.shape[0], 5000, 100)
 searched = st.button("Search")
 
-if searched:
+if searched or query:
     df_output = Script.find_anime(query, n_rows=top_n)
     df_output.index += 1
     try:
