@@ -3,9 +3,10 @@ Searching for recommendations using vector embedding. I am currently trying to m
 
 TODO:
 - [x] Deploy online
+- [ ] Put your ipynb from kaggle to here
 - [ ] Deploy on platform that allow CUDA integration
 - [ ] DOCUMENTATION!!! DON'T BE LAZY
-- [ ] Add your own data scraping
+- [x] Add your own data scraping
 - [ ] Format displayed df 
 - [ ] Change theme
 - [ ] Provide better description

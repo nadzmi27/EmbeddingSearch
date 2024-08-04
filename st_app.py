@@ -1,7 +1,7 @@
 # Import dependencies
 import streamlit as st
 import pandas as pd
-import Script
+import script
 
 #
 
@@ -11,7 +11,7 @@ st.set_page_config(
     page_icon=":mag:",
 )
 
-anime_filtered = pd.read_csv('AnimeFiltered.csv')
+anime_filtered = pd.read_csv('Data/AnimeFiltered.csv')
 
 # Description
 st.header(":rainbow[AniSearch!] :mag:", divider='rainbow')
@@ -34,7 +34,7 @@ top_n = st.slider("Top n-th anime:", 100, anime_filtered.shape[0], 5000, 100)
 searched = st.button("Search")
 
 if query or searched:
-    df_output = Script.find_anime(query, n_rows=top_n)
+    df_output = script.find_anime(query, n_rows=top_n)
     df_output.index += 1
     try:
         st.dataframe(df_output)

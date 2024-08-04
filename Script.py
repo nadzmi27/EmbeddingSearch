@@ -18,13 +18,13 @@ top_k = 100 #Number of passages we want to retrieve with the bi-encoder
 cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
 
 # Read the csv
-anime_filtered = pd.read_csv('AnimeFiltered.csv')
+anime_filtered = pd.read_csv('Data/AnimeFiltered.csv')
 anime_filtered.index.name = "Rank"
 
 # Read the corpus embeddings and corpus
-ce1 = np.load("CE1.npy")
-ce2 = np.load("CE2.npy")
-ce3 = np.load("CE3.npy")
+ce1 = np.load("Data/CE1.npy")
+ce2 = np.load("Data/CE2.npy")
+ce3 = np.load("Data/CE3.npy")
 corpus_embeddings = np.concatenate((ce1, ce2, ce3))
 
 corpus = anime_filtered.DescriptionAugmented.to_list()
