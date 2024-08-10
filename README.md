@@ -1,5 +1,9 @@
-# Link
 Access the application [https://animesearch.streamlit.app/](https://animesearch.streamlit.app/)
+
+# Background
+
+# Architecture
+![image](https://github.com/user-attachments/assets/8cdabe41-72ef-40dc-b25b-3ed5f601f9f8)
 
 # EmbeddingSearch
 Searching for recommendations using vector embedding. I am currently trying to make it work for the Anime Dataset from MAL
