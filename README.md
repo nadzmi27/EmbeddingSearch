@@ -1,4 +1,5 @@
-🔎 [Click here to access the application](https://animesearch.streamlit.app/) | 📒 [Click here to access the Kaggle notebook](#)
+🔎 [Click here to access the application](https://animesearch.streamlit.app/) 
+📒 For more details about the embedding [access the Kaggle notebook here](#)
 
 # Background
 
