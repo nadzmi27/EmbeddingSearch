@@ -1,5 +1,5 @@
 🔎 To access the app online please [click here](https://animesearch.streamlit.app/)  
-📒 For more details about the embedding [access the Kaggle notebook here](#)
+📒 For more details[access the Kaggle notebook here](#)
 
 # Background
 
