@@ -1,13 +1,36 @@
+🔎 [Click here to access the application](https://animesearch.streamlit.app/) | 📒 [Click here to access the Kaggle notebook](#)
+
+# Background
+
+# Architecture
+![image](https://github.com/user-attachments/assets/8cdabe41-72ef-40dc-b25b-3ed5f601f9f8)
+- **Scraping (a):** The data is scraped from MyAnimeList using `requests` alongside `pickle` and `logging` to safeguard against failure, allowing the collection across different runtimes.
+- **Cleaning (b) :** The data is cleaned using `pandas`
+- **Preprocessing (c):**
+- **Vectorization (d,g):**
+- **Matching (h):**
+- **Retrieve Candidates (i):**
+- **Pass Candidates + Query (j)**
+- **Filter (k):**
+- **Return (l):** The filtered top anime will be displayed on the application.
+
+
 # EmbeddingSearch
 Searching for recommendations using vector embedding. I am currently trying to make it work for the Anime Dataset from MAL
 
-TODO:
+### TODO:
+GitHub:
+- [ ] Documentation
+- [x] Architecture
 - [x] Deploy online
-- [ ] Put your ipynb from kaggle to here
-- [ ] Deploy on platform that allow CUDA integration
-- [ ] DOCUMENTATION!!! DON'T BE LAZY
-- [x] Add your own data scraping
+- [x] Add data scraping
+- [ ] Put your .ipynb from Kaggle here
+
+Streamlit:
 - [ ] Format displayed df 
 - [ ] Change theme
-- [ ] Provide better description
-- [ ] Link to kaggle
+- [ ] Provide a better description
+- [ ] Improve the UI
+
+Future:
+- [ ] Add recommendation system
