@@ -25,11 +25,11 @@ GitHub:
 - [x] Architecture
 - [x] Deploy online
 - [x] Add data scraping
-- [ ] Put your .ipynb from Kaggle here
+- [x] Put your .ipynb from Kaggle here
 - [ ] Format and upload the data cleaning.ipynb
 
 Streamlit:
-- [ ] Format displayed df 
+- [x] Format displayed df 
 - [ ] Change theme
 - [ ] Provide a better description
 - [ ] Improve the UI
