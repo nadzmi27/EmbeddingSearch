@@ -1,5 +1,5 @@
 🔎 To access the app online please [click here](https://animesearch.streamlit.app/)  
-📒 For more details [access the Kaggle notebook here](#)
+📒 You can also check my [Kaggle notebook](https://www.kaggle.com/code/nadzmiagthomas/anime-finder-sentence-embedding)
 
 # Background
 
