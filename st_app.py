@@ -43,7 +43,7 @@ if query or searched:
 
     column_config = {
         'Url': LinkColumn(
-            "MAL Page",
+            "MyAnimeList Page ",
             help="Click to view the Anime page",
             validate="^https://[a-z]+\.com$",
             display_text="More details"
@@ -52,7 +52,7 @@ if query or searched:
 
     try:
         # st.dataframe(df_output, column_config=column_config)
-        st.caption("Click the description twice to expand")
+        st.caption("Click the description twice to expand. Also, the results is ordered by similarity")
         st.dataframe(
             df_output,
             column_config=column_config,
