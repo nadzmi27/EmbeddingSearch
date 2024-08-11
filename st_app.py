@@ -1,5 +1,6 @@
 # Import dependencies
 import streamlit as st
+from streamlit.column_config import LinkColumn
 import pandas as pd
 import script
 
@@ -12,6 +13,7 @@ st.set_page_config(
 )
 
 anime_filtered = pd.read_csv('Data/AnimeFiltered.csv')
+anime_filtered = anime_filtered[:15000]
 
 # Description
 st.header(":rainbow[AniSearch!] :mag:", divider='rainbow')
@@ -22,8 +24,8 @@ st.write(
     [MyAnimeList](https://myanimelist.net/topanime.php) into vector of numbers. \
     The vector query will be matched to several anime based on the similarity of the encoding. \
     \n\n The purpose of this project is to teach myself about embeddings and encoders. \
-    The same concept can be applied to Movies, TV Series, Books and etc. \
-    For more information please visit my [github repo](https://github.com/nadzmi27/EmbeddingSearch)"
+    The same concept can be applied to Movies, TV Series, Books and even images/audio. \
+    For more information please visit my [GitHub repo](https://github.com/nadzmi27/EmbeddingSearch)"
 )
 
 st.divider()
@@ -36,9 +38,25 @@ searched = st.button("Search")
 if query or searched:
     df_output = script.find_anime(query, n_rows=top_n)
     cols = ['Title', 'Url', 'Description', 'Type', 'Episodes', 'Score', 'Popularity', 'Genres', 'Themes', 'Demographics']
-    df_output = df_output
+    df_output = df_output[cols]
     df_output.index += 1
+
+    column_config = {
+        'Url': LinkColumn(
+            "MAL Page",
+            help="Click to view the Anime page",
+            validate="^https://[a-z]+\.com$",
+            display_text="More details"
+        )
+    }
+
     try:
-        st.dataframe(df_output)
+        # st.dataframe(df_output, column_config=column_config)
+        st.caption("Click the description twice to expand")
+        st.dataframe(
+            df_output,
+            column_config=column_config,
+            hide_index=False
+        )
     except:
         st.dataframe(df_output.astype(str))

@@ -3,4 +3,4 @@ numpy==1.23.5
 scipy==1.10.1
 sentence-transformers==3.0.1
 torch==1.13.1
-streamlit==1.27.2
+streamlit==1.37.1
