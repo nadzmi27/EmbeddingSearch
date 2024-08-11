@@ -23,7 +23,7 @@ st.write(
     The vector query will be matched to several anime based on the similarity of the encoding. \
     \n\n The purpose of this project is to teach myself about embeddings and encoders. \
     The same concept can be applied to Movies, TV Series, Books and etc. \
-    For more information please visit my [github repo](https://www.youtube.com/watch?v=BbeeuzU5Qc8)"
+    For more information please visit my [github repo](https://github.com/nadzmi27/EmbeddingSearch)"
 )
 
 st.divider()
@@ -35,6 +35,8 @@ searched = st.button("Search")
 
 if query or searched:
     df_output = script.find_anime(query, n_rows=top_n)
+    cols = ['Title', 'Url', 'Description', 'Type', 'Episodes', 'Score', 'Popularity', 'Genres', 'Themes', 'Demographics']
+    df_output = df_output
     df_output.index += 1
     try:
         st.dataframe(df_output)
