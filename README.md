@@ -11,7 +11,7 @@ This project is my attempt at leveraging the power of **sentence embedding** (e.
 
 - **Bi-Encoder:** `all-distilroberta-v1`
 - **Cross-Encoder:** `ms-marco-MiniLM-L-6-v2`
-- **Summarizer:** I have to shorten few texts using `Falconsai/text_summarization` to ensure the input is under the context-length limit of the Bi-Encoder and the Cross-Encoder.
+- **Summarizer:** Few texts are shortened in the preprocessing step (c) `Falconsai/text_summarization` to ensure the input is under the context-length limit of the Bi-Encoder and the Cross-Encoder.
 - **Vector Database:** `Numpy`
 
 
